@@ -11,7 +11,6 @@ import Fabric
 import TwitterKit
 import Parse
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

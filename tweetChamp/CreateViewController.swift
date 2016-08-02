@@ -82,11 +82,6 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
             override func viewWillAppear(animated: Bool) {
             super.viewWillAppear(animated)
         }
-//    //When button is tapped, create a new instance of competition in Parse. Currently, creates instance when cell is tapped. !!
-//    @IBAction func challengeTapped(sender: UIButton)
-//    {
-//        sender.enabled = false
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
