@@ -18,8 +18,8 @@ struct UserObject1
     //Sets up the JSON tree path for each property
     init(dict: Dictionary<String, AnyObject>)
     {
-        self.screenName = String(dict["screen_name"]!) //force unwrapping, maybe do this more elegantly
-        self.fullName = String(dict["name"]!) //force unwrapping, maybe do this more elegantly
-        self.userId = Int(String(dict["id_str"]!)) //force unwrapping, maybe do this more elegantly
+        self.screenName = String(describing: dict["screen_name"]!) //force unwrapping, maybe do this more elegantly
+        self.fullName = String(describing: dict["name"]!) //force unwrapping, maybe do this more elegantly
+        self.userId = Int(String(describing: dict["id_str"]!)) //force unwrapping, maybe do this more elegantly
     }
 }

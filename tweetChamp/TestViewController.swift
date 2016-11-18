@@ -35,7 +35,7 @@ class TestViewController: UIViewController {
             let statusesShowEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&include_rts=false"
             let params = ["user_id": userID]
             var clientError : NSError?
-            let request = client.URLRequestWithMethod("GET", URL: statusesShowEndpoint, parameters: params, error: &clientError)
+            let request = client.urlRequest(withMethod: "GET", url: statusesShowEndpoint, parameters: params, error: &clientError)
             client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
                 if connectionError != nil {
                     print("Error: \(connectionError)")
@@ -43,7 +43,7 @@ class TestViewController: UIViewController {
                 
                 //Access JSON tree
                 do {
-                    let tweetDataArray = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSArray
+                    let tweetDataArray = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray
                     
                     for i in tweetDataArray {
                         let json = JSON(i)

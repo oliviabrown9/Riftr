@@ -19,8 +19,8 @@ class ChallengesViewController: UIViewController {
         super.viewDidLoad()
 
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let defaultsTwitterName = defaults.stringForKey("userTwitterName") {
+        let defaults = UserDefaults.standard
+        if let defaultsTwitterName = defaults.string(forKey: "userTwitterName") {
             twitterName = defaultsTwitterName
             print("twitter name: \(twitterName)")
         }
@@ -28,7 +28,7 @@ class ChallengesViewController: UIViewController {
         getCurrentComps()
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         getCurrentComps()
     }
 
@@ -40,8 +40,8 @@ class ChallengesViewController: UIViewController {
         let query2 = PFQuery(className: "Competition")
         query2.whereKey("Challenger2", equalTo: twitterName)
         
-        query = PFQuery.orQueryWithSubqueries([query1, query2])
-        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+        query = PFQuery.orQuery(withSubqueries: [query1, query2])
+        query.findObjectsInBackground { (objects, error) -> Void in
             if error == nil {
                 print("Successfully retrieved: \(objects)")
                 self.myChallenges = objects!
@@ -60,36 +60,36 @@ class ChallengesViewController: UIViewController {
     }
     
     //Unwind segues
-    @IBAction func unwindToContainerVC(segue: UIStoryboardSegue) {
+    @IBAction func unwindToContainerVC(_ segue: UIStoryboardSegue) {
     }
-    @IBAction func unwindToChallenges(segue: UIStoryboardSegue) {
+    @IBAction func unwindToChallenges(_ segue: UIStoryboardSegue) {
     }
     
     //All TableView Datasource functions
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath)
     {
         //Sets up the competition view depending on which cell is clicked !!
         let competitionObject = PFObject(className: "Competition")
         
-        print(PFUser.currentUser()?.username)
+        print(PFUser.current()?.username)
 
     }
     
     //Only one section needed
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(_ tableView: UITableView) -> Int {
         return 1
     }
     //Sets number of rows to how many active challenges the current user has
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //  return .count of array of comeptitons relating to personal user
         return myChallenges.count
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CompTableViewCell", forIndexPath: indexPath) as! CompTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CompTableViewCell", for: indexPath) as! CompTableViewCell
         
-        cell.usernameLabel?.text = myChallenges[indexPath.row] .objectForKey("Challenger2") as? String
+        cell.usernameLabel?.text = (myChallenges[indexPath.row] as AnyObject).object(forKey: "Challenger2") as? String
         return cell
     }
 }

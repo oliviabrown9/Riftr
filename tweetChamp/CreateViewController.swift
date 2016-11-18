@@ -18,7 +18,7 @@ var twitterName = ""
 
 
 //Stores value for the click on cell !!
-var selectedIndexPath: NSIndexPath!
+var selectedIndexPath: IndexPath!
 
 class CreateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
@@ -28,8 +28,8 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let defaultsTwitterName = defaults.stringForKey("userTwitterName") {
+        let defaults = UserDefaults.standard
+        if let defaultsTwitterName = defaults.string(forKey: "userTwitterName") {
             twitterName = defaultsTwitterName
             print("twitter name: \(twitterName)")
         }
@@ -46,7 +46,7 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
             let params = ["user_id": userID]
             var clientError : NSError?
             
-            let request = client.URLRequestWithMethod("GET", URL: showFollowers, parameters: params, error: &clientError)
+            let request = client.urlRequest(withMethod: "GET", url: showFollowers, parameters: params, error: &clientError)
             client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
                 if connectionError != nil {
                     print("Error: \(connectionError)")
@@ -54,7 +54,7 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
                 //Access JSON tree
                 
                 do {
-                    let dict = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary
+                    let dict = try JSONSerialization.jsonObject(with: data!, options: []) as! NSDictionary
                     print("json \(dict)")
                     if let myArray = dict["users"]{
                         
@@ -79,7 +79,7 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
     }
-            override func viewWillAppear(animated: Bool) {
+            override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
         }
 
@@ -90,38 +90,36 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
     
     //TableView Datasource functions
     //Handles when a cell is tapped to create a new instance of competition
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let competitionObject = PFObject(className: "Competition")
 
-        //competitionObject["Challenger1"] = PFUser.currentUser()?.username
-        //competitionObject["Challenger1"] = PFUser.currentUser()?.username
         competitionObject["Challenger1"] = twitterName
         
         competitionObject["Challenger2"] = followerArray[indexPath.row].screenName
         let date = competitionObject["createdAt"]
-        competitionObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+        competitionObject.saveInBackground { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
     }
     //Only one section necessary
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     //Create as many cells as followers
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return followerArray.count
     }
     //Fills in information in each cell for each follower
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FollowerTableViewCell", forIndexPath: indexPath) as! FollowerTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FollowerTableViewCell", for: indexPath) as! FollowerTableViewCell
                cell.label?.text = followerArray[indexPath.row].fullName
                cell.sublabel?.text = "@\(followerArray[indexPath.row].screenName)"
             return cell
     }
     
     //Setting up the next view after a cell is tapped !!
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // timelineComponent.targetWillDisplayEntry(indexPath.row)
     }
     

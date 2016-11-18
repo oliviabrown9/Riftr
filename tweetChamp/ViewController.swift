@@ -29,8 +29,8 @@ class ViewController: UIViewController {
  
                 //self.makeAUser(unwrappedSession.userName)
                 
-                let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(unwrappedSession.userName, forKey: "userTwitterName")
+                let defaults = UserDefaults.standard
+                defaults.set(unwrappedSession.userName, forKey: "userTwitterName")
                 
                 //Now logged in, begin using app
                 
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
                     self.performSegueWithIdentifier("toMain", sender: self)
                 }))
                 */
-                self.performSegueWithIdentifier("toMain", sender: self)
+                self.performSegue(withIdentifier: "toMain", sender: self)
                 //end
                 
                 //self.presentViewController(alert, animated: true, completion: nil)
@@ -57,10 +57,10 @@ class ViewController: UIViewController {
         
     }
     
-    func makeAUser(twitterUserName: String) {
+    func makeAUser(_ twitterUserName: String) {
         
         //Some random stuff that Cliff put in that doesn't do anything
-        let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
+        let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 150)) as UIActivityIndicatorView
         spinner.startAnimating()
         
         //Defining Parse user
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         newUser.email = "me@gmail.com"
         
         // Sign up the user asynchronously
-        newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
+        newUser.signUpInBackground(block: { (succeed, error) -> Void in
             
             // Stop the spinner more of Cliff's stuff
             spinner.stopAnimating()
