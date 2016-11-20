@@ -12,19 +12,16 @@ import Parse
 class ChallengesViewController: UIViewController {
     
     @IBOutlet weak var challengesTableView: UITableView!
-    var myChallenges = []
+    var myChallenges = [PFObject]()
     var twitterName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         let defaults = UserDefaults.standard
         if let defaultsTwitterName = defaults.string(forKey: "userTwitterName") {
             twitterName = defaultsTwitterName
             print("twitter name: \(twitterName)")
         }
-        
         getCurrentComps()
     }
 
@@ -41,8 +38,6 @@ class ChallengesViewController: UIViewController {
         query2.whereKey("Challenger2", equalTo: twitterName)
         
         query = PFQuery.orQuery(withSubqueries: [query1, query2])
-        //query = PFQuery(className: "Competition")
-        //query.whereKey("Challenger1", equalTo: "sundarpichai")
         query.findObjectsInBackground { (objects, error) -> Void in
             if error == nil {
                 print("Successfully retrieved: \(objects)")
@@ -50,7 +45,7 @@ class ChallengesViewController: UIViewController {
                 self.challengesTableView.reloadData()
                 print("Array of Objects \(self.myChallenges.count)")
             } else {
-                print("Error: \(error) \(error!.userInfo)")
+                print("Error: \(error)")
             }
         }
 
@@ -69,8 +64,7 @@ class ChallengesViewController: UIViewController {
         //Sets up the competition view depending on which cell is clicked !!
         let competitionObject = PFObject(className: "Competition")
         
-        print(PFUser.current()?.username)
-
+        print(PFUser.current()?.username as Any)
     }
     
     //Only one section needed

@@ -96,7 +96,7 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
         
         competitionObject["Challenger2"] = followerArray[indexPath.row].screenName
         let date = competitionObject["createdAt"]
-        competitionObject.saveInBackground { (success: Bool, error: NSError?) -> Void in
+        competitionObject.saveInBackground { (success, error) in
             print("Object has been saved.")
         }
     }
