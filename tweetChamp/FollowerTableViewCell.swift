@@ -2,7 +2,7 @@
 //  FollowerTableViewCell.swift
 //  tweetChamp
 //
-//  Created by Randy Perecman on 7/7/16.
+//  Created by Olivia Brown on 7/7/16.
 //  Copyright © 2016 tweetChamp. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  CompTableViewCell.swift
 //  tweetChamp
 //
-//  Created by Randy Perecman on 7/8/16.
+//  Created by Olivia Brown on 7/8/16.
 //  Copyright © 2016 tweetChamp. All rights reserved.
 //
 
@@ -16,7 +16,6 @@ class CompTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

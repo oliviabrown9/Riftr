@@ -35,7 +35,6 @@
 		160E36201D2D760600539558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160E36221D2D760600539558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160E362F1D2D794300539558 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		160E36321D2D842000539558 /* VarelaRound-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VarelaRound-Regular.otf"; path = "Pods/VarelaRound-Regular.otf"; sourceTree = "<group>"; };
 		160E36341D2D863400539558 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		160E36361D2D9D1900539558 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		160E36381D2DA70F00539558 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 			children = (
 				160E36151D2D760600539558 /* tweetChamp */,
 				160E36141D2D760600539558 /* Products */,
-				160E36321D2D842000539558 /* VarelaRound-Regular.otf */,
 				8C9A94B51E2176942F8925D8 /* Pods */,
 				FAD983A44B34EDBA7FA2717C /* Frameworks */,
 			);
