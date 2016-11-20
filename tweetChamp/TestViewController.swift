@@ -12,19 +12,18 @@ import TwitterKit
 import Parse
 import SwiftyJSON
 
-//Create an empty array of each user's Tweets which will be filled in below
+// Create an empty array of each user's Tweets which will be filled in below
 var userTweets: [Tweet] = []
 var myUser = PFObject(className: "User")
 class TestViewController: UIViewController {
     
-    //Test label
+    // Test label
     @IBOutlet weak var retweetTotal: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Setting up the current user's User struct
-        
         myUser["username"] = User().username
         myUser["userID"] = User().userID
         myUser["ActiveChallenges"] = User().activeChallenges
@@ -41,7 +40,7 @@ class TestViewController: UIViewController {
                     print("Error: \(connectionError)")
                 }
                 
-                //Access JSON tree
+                // Access JSON tree
                 do {
                     let tweetDataArray = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray
                     
@@ -51,7 +50,7 @@ class TestViewController: UIViewController {
                         userTweets.append(tweet)
                     }
                     
-                    //Method to add together all retweets from the current user !! Alter it to only include tweets from the past week
+                    // Method to add together all retweets from the current user !! Alter it to only include tweets from the past week
                     func getRetweetTotal() -> Int
                     {
                         var totalRetweets: Int = 0
@@ -63,18 +62,12 @@ class TestViewController: UIViewController {
                         return totalRetweets
                     }
                     
-                    //Twitter Fabric error handling on the JSON tree
+                    // Twitter Fabric error handling on the JSON tree
                 } catch let jsonError as NSError {
                     print("json error: \(jsonError.localizedDescription)")
                   }
             }
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }
 

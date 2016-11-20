@@ -8,7 +8,7 @@
 
 import UIKit
 
-//TableViewCell for each active competition
+// TableViewCell for each active competition
 class CompTableViewCell: UITableViewCell {
 
     @IBOutlet weak var usernameLabel: UILabel!
