@@ -1,32 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="VarelaRound-Regular.otf">
+        <array key="VarelaRound-Regular.otf">
             <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-            <string>VarelaRound</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -38,16 +24,16 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="riftr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuF-Uy-VgI">
-                                <rect key="frame" x="238" y="100" width="124" height="82"/>
+                                <rect key="frame" x="136.5" y="150" width="102" height="79.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="kY5-pJ-rpK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="68"/>
-                                <color key="textColor" red="0.40000000000000002" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.40000000000000002" green="1" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -56,48 +42,22 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prove to be the most popular of your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMY-bK-xGn">
-                                <rect key="frame" x="87" y="406" width="427" height="67"/>
+                                <rect key="frame" x="-5" y="449.5" width="385" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="TBh-wH-uEV"/>
-                                    <constraint firstAttribute="width" constant="427" id="XTb-cp-i70"/>
-                                    <constraint firstAttribute="height" constant="67" id="uWk-Mb-UVJ"/>
+                                    <constraint firstAttribute="width" constant="385" id="s4F-db-lnI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="TBh-wH-uEV"/>
-                                    </mask>
-                                </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="kMY-bK-xGn" secondAttribute="trailing" constant="130" id="BQp-EJ-seL"/>
                             <constraint firstItem="cuF-Uy-VgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cxw-pa-eFu"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GSx-Ak-dQl"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="LBZ-iy-8xN"/>
-                            <constraint firstItem="cuF-Uy-VgI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="SZz-Tb-g0d"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="top" secondItem="cuF-Uy-VgI" secondAttribute="bottom" constant="224" id="T4b-VS-Ept"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dOF-9u-Y7e"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cuF-Uy-VgI" secondAttribute="trailing" constant="218" id="luZ-sH-67w"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="top" secondItem="cuF-Uy-VgI" secondAttribute="bottom" constant="74" id="oqb-Rw-FSk"/>
-                            <constraint firstItem="cuF-Uy-VgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r2F-Iu-2eG"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUo-Wi-Dpb"/>
-                            <constraint firstItem="kMY-bK-xGn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="139.5" id="ylD-Yk-FTT"/>
+                            <constraint firstItem="cuF-Uy-VgI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="N3x-IZ-ERA"/>
+                            <constraint firstItem="kMY-bK-xGn" firstAttribute="top" secondItem="cuF-Uy-VgI" secondAttribute="bottom" constant="220" id="SZ3-yi-xW6"/>
+                            <constraint firstItem="kMY-bK-xGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jOp-pM-Ncf"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="SZz-Tb-g0d"/>
-                                <exclude reference="luZ-sH-67w"/>
-                                <exclude reference="r2F-Iu-2eG"/>
-                                <exclude reference="BQp-EJ-seL"/>
-                                <exclude reference="dOF-9u-Y7e"/>
-                                <exclude reference="oqb-Rw-FSk"/>
-                                <exclude reference="sUo-Wi-Dpb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <segue destination="fCa-Sc-IRe" kind="show" identifier="toMain" id="U7d-tl-76d"/>
@@ -105,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="-456"/>
+            <point key="canvasLocation" x="412" y="-456.52173913043481"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="ziT-X6-sM0">
@@ -116,29 +76,28 @@
                         <viewControllerLayoutGuide type="bottom" id="lHX-Dn-7pG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ty-vD-xra">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olivia's Retweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dK-gf-4Bp">
-                                <rect key="frame" x="235" y="241" width="130" height="21"/>
+                                <rect key="frame" x="122.5" y="241" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mU-VH-2Dg">
-                                <rect key="frame" x="285" y="289" width="31" height="21"/>
+                                <rect key="frame" x="172" y="323" width="31" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2mU-VH-2Dg" firstAttribute="centerX" secondItem="0ty-vD-xra" secondAttribute="centerX" id="0u6-8h-SCu"/>
+                            <constraint firstItem="0dK-gf-4Bp" firstAttribute="centerX" secondItem="0ty-vD-xra" secondAttribute="centerX" id="8Q3-XQ-5QR"/>
                             <constraint firstItem="2mU-VH-2Dg" firstAttribute="centerY" secondItem="0ty-vD-xra" secondAttribute="centerY" id="M7t-vx-ijn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0dK-gf-4Bp" secondAttribute="trailing" constant="215" id="MgH-T0-K4g"/>
                             <constraint firstItem="0dK-gf-4Bp" firstAttribute="top" secondItem="ZzX-eH-ZuH" secondAttribute="bottom" constant="221" id="Ted-Ba-Spg"/>
-                            <constraint firstItem="0dK-gf-4Bp" firstAttribute="centerX" secondItem="0ty-vD-xra" secondAttribute="centerX" id="gLd-8Z-hCS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -158,66 +117,76 @@
                         <viewControllerLayoutGuide type="bottom" id="Fba-X4-wec"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z07-O2-T6c">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-6P-aCq">
                                 <rect key="frame" x="192" y="150" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@oliviaAUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-W2-Lty">
                                 <rect key="frame" x="311" y="150" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icK-5s-mOi">
                                 <rect key="frame" x="239" y="20" width="122" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-Np-nlQ">
                                 <rect key="frame" x="303" y="151" width="1" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDj-vl-ZVL">
                                 <rect key="frame" x="226" y="243" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCd-4n-rCk">
                                 <rect key="frame" x="212" y="343" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33I-TE-N7T">
                                 <rect key="frame" x="176" y="443" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-b0-GS0">
                                 <rect key="frame" x="298" y="236" width="95" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
-                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-78-bpj">
                                 <rect key="frame" x="301" y="336" width="95" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
-                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILZ-rM-49E">
                                 <rect key="frame" x="298" y="435" width="95" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Meo-AD-4Wr"/>
                 </viewController>
@@ -234,11 +203,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ywh-9X-urc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fSS-Yx-1mw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-Y2-ipK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Challenges" id="fjJ-op-iBa">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="P1A-hd-BLY">
@@ -250,23 +219,23 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ZL-wF-UJx">
-                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompTableViewCell" rowHeight="68" id="9AN-Cf-M6t" customClass="CompTableViewCell" customModule="tweetChamp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="68"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9AN-Cf-M6t" id="qf6-Mc-COf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="67.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@OliviaAUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m2-nS-GnQ">
-                                                    <rect key="frame" x="8" y="20" width="337" height="28"/>
+                                                    <rect key="frame" x="8" y="20.5" width="337" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="337" id="J6r-dS-4hl"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="23"/>
-                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -275,8 +244,8 @@
                                                 <constraint firstItem="5m2-nS-GnQ" firstAttribute="leading" secondItem="qf6-Mc-COf" secondAttribute="leadingMargin" id="vSM-pt-45q"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.2024695873260498" green="0.2024695873260498" blue="0.2024695873260498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="usernameLabel" destination="5m2-nS-GnQ" id="CjD-6A-4hQ"/>
                                             <segue destination="wPk-M6-oeK" kind="show" id="IKL-IA-z0i"/>
@@ -289,7 +258,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8ZL-wF-UJx" firstAttribute="bottom" secondItem="ywh-9X-urc" secondAttribute="top" id="0k4-cu-Myz"/>
                             <constraint firstAttribute="trailing" secondItem="GUa-Y2-ipK" secondAttribute="trailing" id="CO8-Iy-dex"/>
@@ -318,44 +287,44 @@
                         <viewControllerLayoutGuide type="bottom" id="xnC-M9-E4M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Pt-B6-EGD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Randy Perecman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx5-df-8ec">
-                                <rect key="frame" x="101" y="118" width="163" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randy Perecman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx5-df-8ec">
+                                <rect key="frame" x="36" y="118" width="153.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
-                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xq-Wi-xtq">
-                                <rect key="frame" x="379" y="118" width="121" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xq-Wi-xtq">
+                                <rect key="frame" x="226" y="118" width="113" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
-                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf8-Fn-fwp">
-                                <rect key="frame" x="124" y="175" width="116" height="111"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf8-Fn-fwp">
+                                <rect key="frame" x="61.5" y="173.5" width="102.5" height="107.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="92"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="87" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyp-gh-cGm">
-                                <rect key="frame" x="382" y="175" width="116" height="111"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyp-gh-cGm">
+                                <rect key="frame" x="231.5" y="173.5" width="102.5" height="107.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="92"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPt-rc-ZNg">
-                                <rect key="frame" x="245" y="385" width="93" height="25"/>
+                                <rect key="frame" x="135" y="380" width="88.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5L-d5-zVR">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="barTintColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="h7K-mW-8XT">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="DhE-my-Jwo">
@@ -367,13 +336,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday, June 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAG-iW-ilP">
-                                <rect key="frame" x="228" y="450" width="145" height="25"/>
+                                <rect key="frame" x="119.5" y="443.5" width="136" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="200" id="2Bo-37-ifp"/>
                             <constraint firstItem="TPt-rc-ZNg" firstAttribute="top" secondItem="oyp-gh-cGm" secondAttribute="bottom" constant="99" id="9kP-rY-VBJ"/>
@@ -423,11 +392,11 @@
                         <viewControllerLayoutGuide type="bottom" id="nqZ-DL-ir5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o2S-X7-Piv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUi-iE-qE4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Create Challenge" id="etv-dc-n9d">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="LWN-fZ-TQe">
@@ -439,36 +408,36 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOr-nx-dmQ">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowerTableViewCell" rowHeight="68" id="wAU-rB-TAP" customClass="FollowerTableViewCell" customModule="tweetChamp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="68"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wAU-rB-TAP" id="Wzb-Ps-V8M">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="67.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-ph-tFa">
-                                                    <rect key="frame" x="8" y="8" width="377" height="21"/>
+                                                    <rect key="frame" x="8" y="8" width="377" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="377" id="EKy-6b-3mb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@OliviaAUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5s-MM-PVw">
-                                                    <rect key="frame" x="8" y="37" width="224" height="21"/>
+                                                    <rect key="frame" x="8" y="36" width="224" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="224" id="CFj-yk-IAb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="xaM-ph-tFa" firstAttribute="top" secondItem="Wzb-Ps-V8M" secondAttribute="topMargin" id="0y1-e0-7Mj"/>
                                                 <constraint firstItem="xaM-ph-tFa" firstAttribute="leading" secondItem="K5s-MM-PVw" secondAttribute="leading" id="87S-lN-q17"/>
@@ -488,7 +457,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KUi-iE-qE4" firstAttribute="trailing" secondItem="zOr-nx-dmQ" secondAttribute="trailing" id="BpT-lw-9Ek"/>
                             <constraint firstAttribute="trailing" secondItem="KUi-iE-qE4" secondAttribute="trailing" id="FZ3-Fh-B91"/>
@@ -521,7 +490,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bkv-Ez-rno">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ZSe-qn-m3p" kind="relationship" relationship="viewControllers" id="lF6-FU-K0p"/>
