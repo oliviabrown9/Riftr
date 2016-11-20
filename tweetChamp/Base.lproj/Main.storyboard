@@ -29,17 +29,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="riftr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuF-Uy-VgI">
                                 <rect key="frame" x="136.5" y="150" width="102" height="79.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="kY5-pJ-rpK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="68"/>
                                 <color key="textColor" red="0.40000000000000002" green="1" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="kY5-pJ-rpK"/>
-                                    </mask>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prove to be the most popular of your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMY-bK-xGn">
                                 <rect key="frame" x="-5" y="449.5" width="385" height="60"/>
@@ -120,79 +112,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-6P-aCq">
-                                <rect key="frame" x="192" y="150" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@oliviaAUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-W2-Lty">
-                                <rect key="frame" x="311" y="150" width="93" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icK-5s-mOi">
-                                <rect key="frame" x="239" y="20" width="122" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="icK-5s-mOi">
+                                <rect key="frame" x="126.5" y="72" width="122" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="Uco-QJ-2hb"/>
+                                    <constraint firstAttribute="width" constant="122" id="ifE-qE-FkF"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-Np-nlQ">
-                                <rect key="frame" x="303" y="151" width="1" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olivia Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-6P-aCq">
+                                <rect key="frame" x="89" y="202" width="96" height="20"/>
+                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@oliviaAUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-W2-Lty">
+                                <rect key="frame" x="208" y="202" width="87" height="20"/>
+                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-Np-nlQ">
+                                <rect key="frame" x="200" y="203" width="1" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JuM-gJ-2SQ"/>
+                                    <constraint firstAttribute="width" constant="1" id="gD6-gr-0aq"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDj-vl-ZVL">
-                                <rect key="frame" x="226" y="243" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDj-vl-ZVL">
+                                <rect key="frame" x="123" y="295" width="42.5" height="20"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCd-4n-rCk">
-                                <rect key="frame" x="212" y="343" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Losses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCd-4n-rCk">
+                                <rect key="frame" x="109" y="395" width="59" height="20"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33I-TE-N7T">
-                                <rect key="frame" x="176" y="443" width="95" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33I-TE-N7T">
+                                <rect key="frame" x="73" y="495" width="90" height="20"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-b0-GS0">
-                                <rect key="frame" x="298" y="236" width="95" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-b0-GS0">
+                                <rect key="frame" x="195" y="288" width="83.5" height="35"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
                                 <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-78-bpj">
-                                <rect key="frame" x="301" y="336" width="95" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-78-bpj">
+                                <rect key="frame" x="198" y="388" width="83.5" height="35"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
                                 <color key="textColor" red="0.10737176649999999" green="1" blue="0.67074753600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILZ-rM-49E">
-                                <rect key="frame" x="298" y="435" width="95" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILZ-rM-49E">
+                                <rect key="frame" x="195" y="487" width="83.5" height="35"/>
                                 <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LNT-78-bpj" firstAttribute="top" secondItem="EmI-b0-GS0" secondAttribute="bottom" constant="65" id="7ES-eI-U8W"/>
+                            <constraint firstItem="33I-TE-N7T" firstAttribute="leading" secondItem="z07-O2-T6c" secondAttribute="leadingMargin" constant="57" id="90h-oP-HPs"/>
+                            <constraint firstItem="EmI-b0-GS0" firstAttribute="top" secondItem="iIZ-Np-nlQ" secondAttribute="bottom" constant="64" id="COS-V0-qXq"/>
+                            <constraint firstItem="LNT-78-bpj" firstAttribute="leading" secondItem="GCd-4n-rCk" secondAttribute="trailing" constant="30" id="Ca3-Nb-b4D"/>
+                            <constraint firstItem="33I-TE-N7T" firstAttribute="top" secondItem="GCd-4n-rCk" secondAttribute="bottom" constant="80" id="F0g-6F-WiI"/>
+                            <constraint firstItem="icK-5s-mOi" firstAttribute="centerX" secondItem="z07-O2-T6c" secondAttribute="centerX" id="F5c-8S-EJQ"/>
+                            <constraint firstItem="qiP-6P-aCq" firstAttribute="top" secondItem="icK-5s-mOi" secondAttribute="bottom" constant="8" id="KeT-IJ-64V"/>
+                            <constraint firstItem="lDj-vl-ZVL" firstAttribute="top" secondItem="iIZ-Np-nlQ" secondAttribute="bottom" constant="71" id="PD4-Hp-GrI"/>
+                            <constraint firstItem="gVc-W2-Lty" firstAttribute="top" secondItem="icK-5s-mOi" secondAttribute="bottom" constant="8" id="Qmv-h2-79y"/>
+                            <constraint firstItem="ILZ-rM-49E" firstAttribute="top" secondItem="LNT-78-bpj" secondAttribute="bottom" constant="64" id="RCV-tb-TmT"/>
+                            <constraint firstItem="iIZ-Np-nlQ" firstAttribute="leading" secondItem="qiP-6P-aCq" secondAttribute="trailing" constant="15" id="SU8-9B-3rG"/>
+                            <constraint firstItem="GCd-4n-rCk" firstAttribute="leading" secondItem="z07-O2-T6c" secondAttribute="leadingMargin" constant="93" id="Vhq-Ve-02f"/>
+                            <constraint firstItem="EmI-b0-GS0" firstAttribute="leading" secondItem="lDj-vl-ZVL" secondAttribute="trailing" constant="29.5" id="beW-jF-Lcb"/>
+                            <constraint firstItem="ILZ-rM-49E" firstAttribute="leading" secondItem="33I-TE-N7T" secondAttribute="trailing" constant="32" id="btf-Iw-pLw"/>
+                            <constraint firstItem="GCd-4n-rCk" firstAttribute="top" secondItem="lDj-vl-ZVL" secondAttribute="bottom" constant="80" id="i0o-XR-Wb7"/>
+                            <constraint firstItem="icK-5s-mOi" firstAttribute="top" secondItem="aL0-1J-PrI" secondAttribute="bottom" constant="52" id="lWB-gY-F52"/>
+                            <constraint firstItem="qiP-6P-aCq" firstAttribute="leading" secondItem="z07-O2-T6c" secondAttribute="leadingMargin" constant="73" id="tzV-h0-N7b"/>
+                            <constraint firstItem="lDj-vl-ZVL" firstAttribute="leading" secondItem="z07-O2-T6c" secondAttribute="leadingMargin" constant="107" id="v7a-W1-iDQ"/>
+                            <constraint firstItem="gVc-W2-Lty" firstAttribute="leading" secondItem="iIZ-Np-nlQ" secondAttribute="trailing" constant="7" id="xHL-sg-2Tf"/>
+                            <constraint firstItem="iIZ-Np-nlQ" firstAttribute="top" secondItem="icK-5s-mOi" secondAttribute="bottom" constant="9" id="yic-m3-dj6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Meo-AD-4Wr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfH-5Y-vH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="985"/>
+            <point key="canvasLocation" x="412" y="902"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Jpc-Rb-yaM">
@@ -344,7 +356,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="200" id="2Bo-37-ifp"/>
                             <constraint firstItem="TPt-rc-ZNg" firstAttribute="top" secondItem="oyp-gh-cGm" secondAttribute="bottom" constant="99" id="9kP-rY-VBJ"/>
                             <constraint firstItem="xx5-df-8ec" firstAttribute="centerX" secondItem="Qf8-Fn-fwp" secondAttribute="centerX" id="Bj5-cd-7tz"/>
                             <constraint firstItem="V5L-d5-zVR" firstAttribute="centerX" secondItem="pAG-iW-ilP" secondAttribute="centerX" id="CFW-7j-W0M"/>
@@ -354,28 +365,13 @@
                             <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="40" id="QFN-oq-DfB"/>
                             <constraint firstItem="oyp-gh-cGm" firstAttribute="centerX" secondItem="4Xq-Wi-xtq" secondAttribute="centerX" id="T8c-9U-uxf"/>
                             <constraint firstItem="V5L-d5-zVR" firstAttribute="leading" secondItem="4Pt-B6-EGD" secondAttribute="leading" id="U11-HA-LZl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Xq-Wi-xtq" secondAttribute="trailing" constant="80" id="W7K-nV-IpG"/>
-                            <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="120" id="YHi-mS-I7J"/>
-                            <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="260" id="bOI-LB-IAG"/>
                             <constraint firstItem="xx5-df-8ec" firstAttribute="leading" secondItem="4Pt-B6-EGD" secondAttribute="leadingMargin" constant="20" id="cXQ-oX-weO"/>
-                            <constraint firstItem="xx5-df-8ec" firstAttribute="leading" secondItem="4Pt-B6-EGD" secondAttribute="leadingMargin" constant="80" id="idT-pA-wDT"/>
                             <constraint firstItem="TPt-rc-ZNg" firstAttribute="centerX" secondItem="4Pt-B6-EGD" secondAttribute="centerX" constant="-8.5" id="lQd-Xc-dfe"/>
                             <constraint firstItem="xx5-df-8ec" firstAttribute="baseline" secondItem="4Xq-Wi-xtq" secondAttribute="baseline" id="pt0-wl-DfJ"/>
                             <constraint firstItem="xx5-df-8ec" firstAttribute="top" secondItem="4Pt-B6-EGD" secondAttribute="top" constant="118" id="sej-M4-zU6"/>
-                            <constraint firstItem="pAG-iW-ilP" firstAttribute="top" secondItem="TPt-rc-ZNg" secondAttribute="bottom" constant="120" id="tUH-zg-91k"/>
                             <constraint firstItem="pAG-iW-ilP" firstAttribute="centerX" secondItem="4Pt-B6-EGD" secondAttribute="centerX" id="ueB-Kq-fN8"/>
                             <constraint firstItem="oyp-gh-cGm" firstAttribute="baseline" secondItem="Qf8-Fn-fwp" secondAttribute="baseline" id="vGF-2D-NRH"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="idT-pA-wDT"/>
-                                <exclude reference="W7K-nV-IpG"/>
-                                <exclude reference="2Bo-37-ifp"/>
-                                <exclude reference="YHi-mS-I7J"/>
-                                <exclude reference="bOI-LB-IAG"/>
-                                <exclude reference="tUH-zg-91k"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xn-hh-3a4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -466,13 +462,7 @@
                             <constraint firstItem="KUi-iE-qE4" firstAttribute="leading" secondItem="o2S-X7-Piv" secondAttribute="leading" id="mex-4E-w2c"/>
                             <constraint firstItem="zOr-nx-dmQ" firstAttribute="top" secondItem="KUi-iE-qE4" secondAttribute="bottom" id="sBx-kL-DG4"/>
                             <constraint firstAttribute="bottom" secondItem="zOr-nx-dmQ" secondAttribute="bottom" id="uoh-cJ-bio"/>
-                            <constraint firstItem="KUi-iE-qE4" firstAttribute="top" secondItem="o2S-X7-Piv" secondAttribute="topMargin" constant="100" id="vKn-IA-KOr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="vKn-IA-KOr"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="createTableView" destination="zOr-nx-dmQ" id="La3-Hf-DM1"/>
