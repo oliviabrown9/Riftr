@@ -41,7 +41,6 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
             
             print(userID)
             
-            // Do any additional setup after loading the view.
             let showFollowers = "https://api.twitter.com/1.1/friends/list.json?skip_status=true&count=50"
             let params = ["user_id": userID]
             var clientError : NSError?
@@ -93,7 +92,6 @@ class CreateViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let competitionObject = PFObject(className: "Competition")
-
         competitionObject["Challenger1"] = twitterName
         
         competitionObject["Challenger2"] = followerArray[indexPath.row].screenName

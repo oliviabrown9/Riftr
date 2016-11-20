@@ -34,13 +34,15 @@ class ChallengesViewController: UIViewController {
 
     func getCurrentComps() {
         var query = PFQuery(className: "Competition")
-        
+
         let query1 = PFQuery(className: "Competition")
         query1.whereKey("Challenger1", equalTo: twitterName)
         let query2 = PFQuery(className: "Competition")
         query2.whereKey("Challenger2", equalTo: twitterName)
         
         query = PFQuery.orQuery(withSubqueries: [query1, query2])
+        //query = PFQuery(className: "Competition")
+        //query.whereKey("Challenger1", equalTo: "sundarpichai")
         query.findObjectsInBackground { (objects, error) -> Void in
             if error == nil {
                 print("Successfully retrieved: \(objects)")
@@ -54,16 +56,12 @@ class ChallengesViewController: UIViewController {
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //Unwind segues
     @IBAction func unwindToContainerVC(_ segue: UIStoryboardSegue) {
     }
     @IBAction func unwindToChallenges(_ segue: UIStoryboardSegue) {
     }
+    
     
     //All TableView Datasource functions
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath)

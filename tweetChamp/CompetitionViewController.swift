@@ -8,13 +8,9 @@
 
 import UIKit
 
-//ViewController that shows the details of each competition!
-
-
+//ViewController that shows the details of each competition
 class CompetitionViewController: UIViewController {
 
-    @IBOutlet weak var username1: UILabel!
-    @IBOutlet weak var username2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

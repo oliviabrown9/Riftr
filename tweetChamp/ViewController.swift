@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         // Sign up the user asynchronously
         newUser.signUpInBackground(block: { (succeed, error) -> Void in
             
-            // Stop the spinner more of Cliff's stuff
+            //more of Cliff's stuff
             spinner.stopAnimating()
             if ((error) != nil) {
                 print("success no error with PFUser sign up")
