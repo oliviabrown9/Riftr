@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         self.view.addSubview(logInButton)
     }
     
+    //Create a Twitter user to access Fabric API
     func makeAUser(_ twitterUserName: String) {
         // Defining Parse user
         let newUser = PFUser()
